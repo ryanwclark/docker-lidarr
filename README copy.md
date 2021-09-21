@@ -1,18 +1,19 @@
-# docker-lidarr
+# docker-plex
 
-[![Build Status](https://img.shields.io/github/workflow/status/ryanwclark/docker-lidarr/build?style=flat-square)](https://github.com/ryanwclark/docker-lidarr/actions?query=workflow%3Abuild)
-[![Docker Stars](https://img.shields.io/docker/stars/ryanwclark/lidarr.svg?style=flat-square&logo=docker)](https://hub.docker.com/ryanwclark/lidarr/)
-[![Docker Pulls](https://img.shields.io/docker/pulls/ryanwclark/lidarr.svg?style=flat-square&logo=docker)](https://hub.docker.com/ryanwclark/lidarr/)
+[![Build Status](https://img.shields.io/github/workflow/status/ryanwclark/docker-plex/build?style=flat-square)](https://github.com/ryanwclark/docker-plex/actions?query=workflow%3Abuild)
+[![Docker Stars](https://img.shields.io/docker/stars/ryanwclark/plex.svg?style=flat-square&logo=docker)](https://hub.docker.com/ryanwclark/plex/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/ryanwclark/plex.svg?style=flat-square&logo=docker)](https://hub.docker.com/ryanwclark/plex/)
 
 
 ## About
 
-This will build a Docker image for [lidarr](https://www.lidarr.org)
+This will build a Docker image for [plex](https://www.plex.org)
 
 ## Table of Contents
 
-- [docker-lidarr](#docker-lidarr)
+- [docker-plex](#docker-plex)
   - [About](#about)
+  - [Maintainer](#maintainer)
   - [Table of Contents](#table-of-contents)
   - [Prerequisites and Assumptions](#prerequisites-and-assumptions)
   - [Prerequisites and Assumptions](#prerequisites-and-assumptions-1)
@@ -49,10 +50,10 @@ No prerequisites
 Clone this repository and build the image with `docker build -t (imagename) .`
 
 ### Prebuilt Images
-Builds of the image are available on [Docker Hub](https://hub.docker.com/ryanwclark/lidarr) and is the recommended method of installation.
+Builds of the image are available on [Docker Hub](https://hub.docker.com/ryanwclark/plex) and is the recommended method of installation.
 
 ```bash
-docker pull ryanwclark/lidarr:(imagetag)
+docker pull ryanwclark/plex:(imagetag)
 ```
 The following image tags are available along with their tagged release based on what's written in the [Changelog](CHANGELOG.md):
 
@@ -101,8 +102,8 @@ Be sure to view the following repositories to understand all the customizable op
 | ------------- | -------------------------------------- | -------- |
 | `ENABLE_LOGS` | Enable Logfiles `TRUE` or `FALSE`      | `FALSE`  |
 | `LOG_LEVEL`   | Log level                              | `notice` |
-| `lidarr_PORT`  | Listening Port                         | `6379`   |
-| `lidarr_PASS`  | (optional) Require password to connect |          |
+| `plex_PORT`  | Listening Port                         | `6379`   |
+| `plex_PASS`  | (optional) Require password to connect |          |
 
 ### Networking
 
@@ -110,7 +111,7 @@ The following ports are exposed.
 
 | Port   | Description |
 | ------ | ----------- |
-| `6379` | lidarr Port  |
+| `6379` | plex Port  |
 
 ## Maintenance
 ### Shell Access
